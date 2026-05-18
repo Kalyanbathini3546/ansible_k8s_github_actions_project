@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: mc-app
-        image: kalyan3546/ga:17
+        image: kalyan3546/ga:0
         ports:
         - containerPort: 8080
 ---
