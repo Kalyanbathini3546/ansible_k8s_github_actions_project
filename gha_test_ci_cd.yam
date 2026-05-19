@@ -89,10 +89,10 @@ jobs:
       # -------------------------------
       - name: Update Kubernetes Deployment YAML
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+          git config user.name "kalyanbathii3546"
+          git config user.email "bathinikalyan3546@gmail.com"
 
-          sed -i "s|k8s_ansible:.*|k8s_ansible:${{ github.run_number }}|g" \
+          sed -i "s|ga:.*|ga:${{ github.run_number }}|g" \
             Ansible/k8s_deployment.yaml
 
           git add Ansible/k8s_deployment.yaml
